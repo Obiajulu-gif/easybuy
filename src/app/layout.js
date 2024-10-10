@@ -1,22 +1,8 @@
 // Import necessary modules and components
-import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SubscriptionSection from "./components/SubscriptionSection";
 import "./globals.css";
-
-// Load custom fonts with specified weights
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-	weight: "100 900",
-});
-
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-});
 
 // Metadata for SEO and page information
 export const metadata = {
@@ -56,9 +42,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
+			<body>
 				{/* Header Component */}
 				<Header />
 

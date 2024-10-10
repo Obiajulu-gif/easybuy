@@ -26,12 +26,13 @@ const Header = () => {
 			<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
 				{/* Logo and Website Name */}
 				<Link href="/" className="flex items-center">
-					<Image
-						src="/path-to-your-logo.png" // Replace with actual path to your logo
-						alt="EasyBuy Logo"
-						width={32}
-						height={32}
-					/>
+					          <Image
+            src="/images/easybuylogo.png" // Replace with actual path to your logo
+            alt="EasyBuy Logo"
+            width={36}
+            height={36}
+            className="rounded-full"
+          />
 					<span className="ml-2 text-xl font-bold">EasyBuy</span>
 				</Link>
 
