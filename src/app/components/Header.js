@@ -66,7 +66,7 @@ const Header = () => {
 						<FiHelpCircle className="mb-1" /> Help and Support
 					</Link>
 					<Link
-						href="/signin"
+						href="/signup"
 						className="flex flex-col items-center text-white"
 					>
 						<FiUser className="mb-1" /> Sign up or Sign In
@@ -77,13 +77,13 @@ const Header = () => {
 			{/* Mobile View - Collapsible Menu */}
 			{isMenuOpen && (
 				<div className="lg:hidden px-4 py-2 bg-orange-600 text-white space-y-2">
-					<Link href="/cart" className="flex items-center">
+					<Link href="/mycart" className="flex items-center">
 						<FiShoppingCart className="mr-1" /> My Cart
 					</Link>
 					<Link href="/support" className="flex items-center">
 						<FiHelpCircle className="mr-1" /> Help and Support
 					</Link>
-					<Link href="/signin" className="flex items-center">
+					<Link href="/signup" className="flex items-center">
 						<FiUser className="mr-1" /> Sign up or Sign In
 					</Link>
 					<Link href="/sell" className="flex items-center">
