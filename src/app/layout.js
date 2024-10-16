@@ -12,7 +12,7 @@ export const metadata = {
 	openGraph: {
 		title: "EasyBuy - Shop Your Favorites",
 		description: "Find the best products across various categories at EasyBuy.",
-		url: "https://yourwebsite.com",
+		url: "https://easybuy-rho.vercel.app",
 		images: [
 			{
 				url: "/path-to-your-image.jpg",
@@ -23,13 +23,13 @@ export const metadata = {
 		],
 	},
 	twitter: {
-		card: "summary_large_image",
+		card: "EasyBuy",
 		title: "EasyBuy - Shop Your Favorites",
 		description: "Find the best products across various categories at EasyBuy.",
-		images: ["/path-to-your-image.jpg"],
+		images: ["/images/easybuylogo.png"],
 	},
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/images/easybuylogo.png",
 	},
 };
 

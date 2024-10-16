@@ -56,7 +56,7 @@ const Header = () => {
 						placeholder="Search by name, brand or product"
 						className="ml-4 px-4 py-2 border border-gray-300 rounded-lg w-1/2 text-gray-800"
 					/>
-					<Link href="/cart" className="flex flex-col items-center text-white">
+					<Link href="/mycart" className="flex flex-col items-center text-white">
 						<FiShoppingCart className="mb-1" /> My Cart
 					</Link>
 					<Link
