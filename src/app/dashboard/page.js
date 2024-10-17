@@ -5,6 +5,7 @@ import DashboardLayout from "./DashboardLayout";
 import ProfileDetails from "./ProfileDetail";
 import DashboardProducts from "./DashboardProducts";
 import MyOrders from "./MyOrders";
+import ReviewList from "./ReviewList";
 export default function Dashboard() {
 	const [activeComponent, setActiveComponent] = useState("profile");
 
@@ -16,8 +17,8 @@ export default function Dashboard() {
 				return <DashboardProducts />;
 			case "orders":
 				return <MyOrders />;
-			// case "reviews":
-			// 	return <MyReviews />; // Replace with actual component
+			case "reviews":
+				return <ReviewList />; // Replace with actual component
 			// case "favorites":
 			// 	return <MyFavorites />; // Replace with actual component
 			default:

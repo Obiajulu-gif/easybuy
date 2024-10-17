@@ -32,7 +32,7 @@ const MyOrders = () => {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`mr-4 pb-2 ${
+            className={`mr-4 pb-2 bg-white ${
               activeTab === tab.id
                 ? "text-orange-500 border-b-2 border-orange-500 font-semibold"
                 : "text-gray-500"
