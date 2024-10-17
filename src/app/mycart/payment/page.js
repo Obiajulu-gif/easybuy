@@ -1,5 +1,5 @@
-// components/CartCheckoutPage.js
-"use client"
+// eslint-disable-next-line react/no-unescaped-entities
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,7 +15,10 @@ const CartCheckoutPage = () => {
 					<h2 className="text-lg font-bold mb-2">My Address</h2>
 					<p className="text-gray-600">
 						No address information available.{" "}
-						<Link href="/mycart/payment/address" className="text-orange-500 font-semibold">
+						<Link
+							href="/mycart/payment/address"
+							className="text-orange-500 font-semibold"
+						>
 							Add an address
 						</Link>
 					</p>
@@ -26,7 +29,10 @@ const CartCheckoutPage = () => {
 					<h2 className="text-lg font-bold mb-2">My Payments</h2>
 					<p className="text-gray-600">
 						No payment information available.{" "}
-						<Link href="/mycart/payment/" className="text-orange-500 font-semibold">
+						<Link
+							href="/mycart/payment/"
+							className="text-orange-500 font-semibold"
+						>
 							Add card info
 						</Link>
 					</p>

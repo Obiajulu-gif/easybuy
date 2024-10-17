@@ -1,4 +1,4 @@
-// components/CartPage.js
+// eslint-disable-next-line react/no-unescaped-entities
 "use client";
 import { useState } from "react";
 import Image from "next/image";
