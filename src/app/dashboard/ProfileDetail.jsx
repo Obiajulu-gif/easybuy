@@ -3,15 +3,16 @@ import React from "react";
 
 const ProfileDetails = () => {
 	return (
-		<div className="p-4 bg-gray-50 min-h-screen flex items-center justify-center">
-			<div className="w-full max-w-4xl bg-white p-6 rounded-lg ">
+		<div className="p-2  min-h-screen flex items-center justify-center">
+
+			<div className="w-full max-w-4xl bg-white p-2 rounded-lg ">
 				<h2 className="text-2xl font-semibold mb-6">Account Information</h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{/* Personal Information Section */}
-					<div>
+					<div className="text-gray-900">
 						<h3 className="text-xl font-bold mb-4">Personal Information</h3>
-						<p className="text-gray-600 text-sm mb-4">
+						<p className="text-sm mb-4">
 							This includes your personal information like names, phone number,
 							and other information.
 						</p>
@@ -45,9 +46,9 @@ const ProfileDetails = () => {
 					</div>
 
 					{/* Address Information Section */}
-					<div>
+					<div className="text-gray-900">
 						<h3 className="text-xl font-bold mb-4">Address Information</h3>
-						<p className="text-gray-600 text-sm mb-4">
+						<p className="text-sm mb-4">
 							This includes your default and saved shipping address information.
 						</p>
 						<div className="space-y-4">

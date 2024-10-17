@@ -37,7 +37,7 @@ const Header = () => {
 				</Link>
 
 				{/* Mobile Menu Icon */}
-				<button onClick={toggleMenu} className="text-white lg:hidden">
+				<button onClick={toggleMenu} className="text-white lg:hidden bg-none">
 					{isMenuOpen ? (
 						<HiX className="w-6 h-6" />
 					) : (
@@ -76,7 +76,7 @@ const Header = () => {
 
 			{/* Mobile View - Collapsible Menu */}
 			{isMenuOpen && (
-				<div className="lg:hidden px-4 py-2 bg-orange-600 text-white space-y-2">
+				<div className="lg:hidden px-4 py-2 bg-orange-600 text-white space-y-2 font-extrabold">
 					<Link href="/mycart" className="flex items-center">
 						<FiShoppingCart className="mr-1" /> My Cart
 					</Link>
@@ -115,7 +115,7 @@ const Header = () => {
 
 			{/* Secondary Navigation Bar with Category Icons */}
 			<div className="hidden lg:flex bg-orange-600 py-2">
-				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-4 text-white">
+				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-4 text-white font-extrabold">
 					<Link href="/sell">Start Selling</Link>
 					<Link href="/categories" className="flex items-center">
 						<MdLocationOn className="mr-1" /> All Categories

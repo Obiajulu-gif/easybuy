@@ -1,7 +1,6 @@
 // Import necessary modules and components
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import SubscriptionSection from "./components/SubscriptionSection";
 import "./globals.css";
 
 // Metadata for SEO and page information
@@ -9,6 +8,9 @@ export const metadata = {
 	title: "EasyBuy - Your Go-To E-commerce Platform",
 	description:
 		"EasyBuy is the ultimate e-commerce platform to buy and sell products ranging from fashion to electronics and more.",
+	icons: {
+		icon: "/images/easybuylogo.png",
+	},
 	openGraph: {
 		title: "EasyBuy - Shop Your Favorites",
 		description: "Find the best products across various categories at EasyBuy.",
@@ -49,8 +51,7 @@ export default function RootLayout({ children }) {
 				{/* Main Content */}
 				<main className="flex-grow">{children}</main>
 
-				{/* Subscription Section */}
-				<SubscriptionSection />
+			
 
 				{/* Footer */}
 				<Footer />

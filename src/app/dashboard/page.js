@@ -1,10 +1,10 @@
 // src/pages/dashboard.js
-"use client"
+"use client";
 import { useState } from "react";
 import DashboardLayout from "./DashboardLayout";
 import ProfileDetails from "./ProfileDetail";
-// Import other components for different sections here...
-
+import DashboardProducts from "./DashboardProducts";
+import MyOrders from "./MyOrders";
 export default function Dashboard() {
 	const [activeComponent, setActiveComponent] = useState("profile");
 
@@ -12,10 +12,10 @@ export default function Dashboard() {
 		switch (activeComponent) {
 			case "profile":
 				return <ProfileDetails />;
-			// case "products":
-			// 	return <MyProducts />; // Replace with actual component
-			// case "orders":
-			// 	return <MyOrders />; // Replace with actual component
+			case "products":
+				return <DashboardProducts />;
+			case "orders":
+				return <MyOrders />;
 			// case "reviews":
 			// 	return <MyReviews />; // Replace with actual component
 			// case "favorites":

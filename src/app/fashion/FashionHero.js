@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { products } from "./products"; // Adjust the path as necessary
+import { products } from "./products"; 
 
 export default function FashionHero() {
 	return (
