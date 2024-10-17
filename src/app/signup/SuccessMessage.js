@@ -9,7 +9,7 @@ const SuccessMessage = () => {
 	useEffect(() => {
 		// Redirect to dashboard after 3 seconds
 		const timer = setTimeout(() => {
-			router.push("/");
+			router.push("/dashboard");
 		}, 3000);
 
 		return () => clearTimeout(timer); // Cleanup the timer
