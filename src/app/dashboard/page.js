@@ -2,7 +2,7 @@
 "use client"
 import { useState } from "react";
 import DashboardLayout from "./DashboardLayout";
-import ProfileDetails from "./Profiledetail";
+import ProfileDetails from "./ProfileDetail";
 // Import other components for different sections here...
 
 export default function Dashboard() {

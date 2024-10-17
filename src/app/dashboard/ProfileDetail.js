@@ -1,4 +1,3 @@
-// src/components/AccountInformation.js
 
 import React from "react";
 
