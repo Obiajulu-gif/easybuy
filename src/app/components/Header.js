@@ -163,7 +163,7 @@ const Header = () => {
 						</Link>
 					) : (
 						<Link
-							href="/sell"
+							href="/signup"
 							className="bg-white text-orange-500 px-4 py-2 rounded-lg shadow-lg hover:bg-orange-100 hover:text-orange-700 transition-colors"
 						>
 							Start Selling
@@ -181,13 +181,13 @@ const Header = () => {
 					<Link href="/computing" className="flex items-center">
 						<MdComputer className="mr-1" /> Computing
 					</Link>
-					<Link href="/groceries" className="flex items-center">
+					<Link href="/fashion" className="flex items-center">
 						<FaUtensils className="mr-1" /> Groceries
 					</Link>
-					<Link href="/home-office" className="flex items-center">
+					<Link href="/fashion" className="flex items-center">
 						<FaHome className="mr-1" /> Home & Office
 					</Link>
-					<Link href="/sports" className="flex items-center">
+					<Link href="/fashion" className="flex items-center">
 						<FaGamepad className="mr-1" /> Sport & Games
 					</Link>
 				</div>
