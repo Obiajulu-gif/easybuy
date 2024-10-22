@@ -1,7 +1,7 @@
 // app/electronics/[id]/page.js
 
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { notFound } from "next/navigation"; // Use this for handling product not found
 
 // Dummy product data (you can replace this with actual API calls or dynamic imports)
 const products = [
@@ -58,14 +58,14 @@ const products = [
 ];
 
 export default function ProductDetailPage({ params }) {
-	const router = useRouter();
 	const { id } = params;
 
-	// Convert id from string to number, and find the product
+	// Find the product by id
 	const product = products.find((p) => p.id === parseInt(id));
 
+	// If the product is not found, return a 404 page
 	if (!product) {
-		return <p>Product not found</p>;
+		return notFound();
 	}
 
 	return (
