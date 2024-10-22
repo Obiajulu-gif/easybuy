@@ -20,6 +20,7 @@ export default function FashionHero() {
 							layout="fill"
 							objectFit="cover"
 							className="w-full h-full"
+							quality={100}
 						/>
 					</div>
 					<div className="mt-4">

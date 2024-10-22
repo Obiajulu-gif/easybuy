@@ -11,12 +11,11 @@ const SuccessMessage = () => {
 			router.push("/dashboard");
 		}, 3000);
 
-		// Cleanup the timer
-		return () => clearTimeout(timer);
+		return () => clearTimeout(timer); // Cleanup the timer
 	}, [router]);
 
 	return (
-		<div className="flex flex-col items-center justify-center ">
+		<div className="flex flex-col items-center justify-center  bg-green-50">
 			<FaCheckCircle className="text-green-500 text-6xl mb-4" />
 			<h2 className="text-4xl font-extrabold text-green-600 mb-2">Success!</h2>
 			<p className="text-lg text-gray-800 mb-4">

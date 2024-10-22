@@ -6,6 +6,7 @@ import ProfileDetails from "./ProfileDetail";
 import DashboardProducts from "./DashboardProducts";
 import MyOrders from "./MyOrders";
 import ReviewList from "./ReviewList";
+import PrivateRoute from "../PrivateRoute";
 export default function Dashboard() {
 	const [activeComponent, setActiveComponent] = useState("profile");
 
@@ -27,11 +28,13 @@ export default function Dashboard() {
 	};
 
 	return (
-		<DashboardLayout
-			activeMenu={activeComponent}
-			setActiveMenu={setActiveComponent}
-		>
-			{renderComponent()}
-		</DashboardLayout>
+		<PrivateRoute>
+			<DashboardLayout
+				activeMenu={activeComponent}
+				setActiveMenu={setActiveComponent}
+			>
+				{renderComponent()}
+			</DashboardLayout>
+		</PrivateRoute>
 	);
 }

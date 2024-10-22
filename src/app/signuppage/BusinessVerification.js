@@ -17,7 +17,7 @@ const BusinessVerification = ({ onContinue }) => {
 				Business verification
 			</h2>
 			<p className="text-gray-600 mb-6 text-center">
-				We ensure recorder who choose to record on our platform are verified for
+				We ensure sellers who choose to sell on our platform are verified for
 				safety reasons
 			</p>
 
@@ -29,55 +29,55 @@ const BusinessVerification = ({ onContinue }) => {
 				}}
 			>
 				<div className="space-y-2">
-					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-indigo-900 transition-colors">
+					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-orange-500 transition-colors">
 						<input
 							type="radio"
-							value="Personal Recording"
-							checked={selectedOption === "Personal Recording"}
+							value="Certificate of Company Registration"
+							checked={selectedOption === "Certificate of Company Registration"}
 							onChange={handleOptionChange}
 							className="mr-2"
 						/>
-						Personal Recording
+						Certificate of Company Registration
 					</label>
 
-					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-indigo-800 transition-colors">
+					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-orange-500 transition-colors">
 						<input
 							type="radio"
-							value="Small Business"
-							checked={selectedOption === "Small Business"}
+							value="International Passport"
+							checked={selectedOption === "International Passport"}
 							onChange={handleOptionChange}
 							className="mr-2"
 						/>
-						Small Business
+						International Passport
 					</label>
 
-					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-indigo-700 transition-colors">
+					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-orange-500 transition-colors">
 						<input
 							type="radio"
-							value="Enterprise"
-							checked={selectedOption === "Enterprise"}
+							value="National Identification"
+							checked={selectedOption === "National Identification"}
 							onChange={handleOptionChange}
 							className="mr-2"
 						/>
-						Enterprise
+						National Identification
 					</label>
 
-					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-indigo-600 transition-colors">
+					<label className="w-full p-3 border border-gray-300 rounded-lg flex items-center hover:border-orange-500 transition-colors">
 						<input
 							type="radio"
-							value="Organisation Recording"
-							checked={selectedOption === "Organisation Recording"}
+							value="Driver's License"
+							checked={selectedOption === "Driver's License"}
 							onChange={handleOptionChange}
 							className="mr-2"
 						/>
-						Organisation Recording
+						Driver's License
 					</label>
 				</div>
 
 				<button
 					type="button"
 					onClick={onContinue}
-					className="w-full bg-indigo-500 text-white py-3 rounded-lg hover:bg-indigo-800 transition-colors mt-4"
+					className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors mt-4"
 				>
 					Continue
 				</button>

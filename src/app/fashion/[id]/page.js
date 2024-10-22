@@ -25,6 +25,7 @@ export default function ProductDetailPage({ params }) {
 					height={500}
 					objectFit="cover"
 					className="rounded-lg"
+					quality={100}
 				/>
 				<div className="flex mt-4 space-x-2">
 					<Image

@@ -6,7 +6,7 @@ const BusinessForm = ({ onContinue }) => (
 	<div className="w-full max-w-md mx-auto p-2 bg-white rounded-lg">
 		<h2 className="text-2xl font-bold mb-2 text-center">Business Name</h2>
 		<p className="text-gray-600 mb-6 text-center">
-			Create a business name to get your business ready for recording
+			Create a store name to get your business ready for listing products
 		</p>
 
 		<form
@@ -48,7 +48,7 @@ const BusinessForm = ({ onContinue }) => (
 			/>
 			<button
 				type="submit"
-				className="w-full bg-indigo-500 text-white py-3 rounded-lg hover:bg-indigo-600 transition-colors"
+				className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors"
 			>
 				Continue
 			</button>

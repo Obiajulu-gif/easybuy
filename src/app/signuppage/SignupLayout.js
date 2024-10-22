@@ -27,9 +27,9 @@ const SignUpLayout = () => {
 	};
 
 	return (
-		<div className="flex flex-col lg:flex-row items-center justify-center h-screen ">
+		<div className="flex flex-col lg:flex-row items-center justify-center h-screen bg-gray-50">
 			{/* Form Section */}
-			<div className="lg:w-1/2 p-8 rounded-lg  flex flex-col items-center lg:mx-8 max-w-md lg:max-w-none lg:flex-1">
+			<div className="lg:w-1/2 bg-white p-8 rounded-lg  flex flex-col items-center lg:mx-8 max-w-md lg:max-w-none lg:flex-1">
 				{renderStepComponent()}
 			</div>
 
@@ -39,10 +39,10 @@ const SignUpLayout = () => {
 					src="/images/signup.png"
 					alt="Sign Up"
 					width={1000}
-					height={1500}
-					className="rounded-lg shadow-lg "
+					height={1000}
+					className="rounded-lg shadow-lg"
 					priority
-					quality={100}
+					quality={90}
 				/>
 			</div>
 		</div>
