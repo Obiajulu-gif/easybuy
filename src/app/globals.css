@@ -3,24 +3,27 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600;700&display=swap');
 
-
 :root {
-  --background: #ffffff;
-  --foreground: #dea319;
-  --primary-color: #071f61; /* Blue for links and accents */
-  --font-family: 'Roboto', 'Work Sans', Arial, Helvetica, sans-serif;
+  --background: #f9f6f2; /* Updated soft background */
+  --foreground: #dea319; /* Keep this warm tone */
+  --primary-color: #463c2c; /* A rich brown to complement the golden foreground */
+  --secondary-color: #ffebc1; /* Light beige for highlights */
+  --text-color: #333333; /* Dark gray for improved readability */
+  --font-family: 'Kodchasan', 'Work Sans', 'Roboto', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #5c8bc4;
+    --background: #2b2b2b;
     --foreground: #ffffff;
-    --primary-color: #60a5fa; 
+    --primary-color: #a67c00; /* Adjusted gold for dark mode */
+    --text-color: #e0e0e0; /* Lighter text in dark mode */
   }
 }
 
 body {
-  color: var(--foreground);
+  background-color: var(--background);
+  color: var(--text-color);
   font-family: var(--font-family);
   font-size: 16px;
   margin: 0;
@@ -34,19 +37,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary-color); /* Updated link color */
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: darken(var(--primary-color), 10%);
   text-decoration: none;
 }
 
 button {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* New button background */
   color: var(--foreground);
   border: none;
   border-radius: 0.375rem;
@@ -57,7 +60,7 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: lighten(var(--primary-color), 10%);
 }
 
 input, textarea {
@@ -66,6 +69,8 @@ input, textarea {
   border-radius: 0.375rem;
   font-size: 1rem;
   font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
 @layer utilities {
@@ -74,4 +79,27 @@ input, textarea {
   }
 }
 
-font-family: 'Kodchasan', Helvetica, sans-serif;
+/* Scroll animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-fade {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Trigger scroll animations */
+@media (prefers-reduced-motion: no-preference) {
+  [data-scroll] {
+    visibility: hidden;
+  }
+  
+  [data-scroll].is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateY(0);
+  }
+}
