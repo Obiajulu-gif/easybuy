@@ -8,7 +8,7 @@ Welcome to **EasyBuy**, an advanced e-commerce platform designed for buying and 
 ## 🚀 **Live Demo**
 Check out the live version of the website:
 [**EasyBuy Live**](https://easybuy-rho.vercel.app/)
-
+![alt text](image.png)
 ## **Table of Contents**
 - [Project Overview](#project-overview)
 - [Features](#features)
