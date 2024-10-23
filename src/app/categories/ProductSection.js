@@ -33,7 +33,7 @@ const ProductSection = () => {
 	};
 
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 bg-gray-50">
+		<section className="flex flex-col md:flex-row p-4 bg-gray-50">
 			{/* Filter Toggle Button on Mobile */}
 			<button
 				onClick={toggleFilter}
@@ -78,7 +78,7 @@ const ProductSection = () => {
 			</aside>
 
 			{/* Product Grid */}
-			<div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+			<div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{products.map((product) => (
 					<div key={product.id} className="bg-white rounded-lg shadow-lg p-4">
 						<div className="relative w-full h-56 rounded-lg overflow-hidden">
