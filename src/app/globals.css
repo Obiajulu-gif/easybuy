@@ -1,105 +1,117 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500;600;700&display=swap");
 
 :root {
-  --background: #f9f6f2; /* Updated soft background */
-  --foreground: #dea319; /* Keep this warm tone */
-  --primary-color: #463c2c; /* A rich brown to complement the golden foreground */
-  --secondary-color: #ffebc1; /* Light beige for highlights */
-  --text-color: #333333; /* Dark gray for improved readability */
-  --font-family: 'Kodchasan', 'Work Sans', 'Roboto', sans-serif;
+	--background: #f9f6f2; /* Updated soft background */
+	--foreground: #dea319; /* Keep this warm tone */
+	--primary-color: #463c2c; /* A rich brown to complement the golden foreground */
+	--secondary-color: #ffebc1; /* Light beige for highlights */
+	--text-color: #090808; /* Dark gray for improved readability */
+	--font-family: "Kodchasan", "Work Sans", "Roboto", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2b2b2b;
-    --foreground: #ffffff;
-    --primary-color: #a67c00; /* Adjusted gold for dark mode */
-    --text-color: #e0e0e0; /* Lighter text in dark mode */
-  }
+	:root {
+		--background: #2b2b2b;
+		--foreground: #181212;
+		--primary-color: #a67c00; /* Adjusted gold for dark mode */
+		--text-color: #e0e0e0; /* Lighter text in dark mode */
+	}
 }
 
 body {
-  background-color: var(--background);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  font-size: 16px;
-  margin: 0;
-  transition: background-color 0.3s, color 0.3s;
+	background-color: var(--background);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	font-size: 16px;
+	margin: 0;
+	transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--foreground);
-  font-weight: 600;
-  font-family: 'Work Sans', 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--foreground);
+	font-weight: 600;
+	font-family: "Work Sans", "Roboto", sans-serif;
 }
 
 a {
-  color: var(--primary-color); /* Updated link color */
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+	color: var(--primary-color); /* Updated link color */
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s ease;
 }
 
 a:hover {
-  color: darken(var(--primary-color), 10%);
-  text-decoration: none;
+	color: darken(var(--primary-color), 10%);
+	text-decoration: none;
 }
 
 button {
-  background-color: var(--primary-color); /* New button background */
-  color: var(--foreground);
-  border: none;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+	background-color: var(--primary-color); /* New button background */
+	color: var(--foreground);
+	border: none;
+	border-radius: 0.375rem;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-  background-color: lighten(var(--primary-color), 10%);
+	background-color: lighten(var(--primary-color), 10%);
 }
 
-input, textarea {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  font-family: var(--font-family);
-  background-color: var(--background);
-  color: var(--text-color);
+input,
+textarea {
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 0.375rem;
+	font-size: 1rem;
+	font-family: var(--font-family);
+	background-color: var(--background);
+	color: var(--text-color);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 /* Scroll animations */
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .scroll-fade {
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
+	opacity: 0;
+	animation: fadeIn 1s ease-out forwards;
 }
 
 /* Trigger scroll animations */
 @media (prefers-reduced-motion: no-preference) {
-  [data-scroll] {
-    visibility: hidden;
-  }
-  
-  [data-scroll].is-visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    transform: translateY(0);
-  }
+	[data-scroll] {
+		visibility: hidden;
+	}
+
+	[data-scroll].is-visible {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+		transform: translateY(0);
+	}
 }
