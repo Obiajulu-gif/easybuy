@@ -33,7 +33,7 @@ const ProductSection = () => {
 	};
 
 	return (
-		<section className="flex flex-col md:flex-row p-4 bg-gray-50">
+		<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 bg-gray-50">
 			{/* Filter Toggle Button on Mobile */}
 			<button
 				onClick={toggleFilter}
