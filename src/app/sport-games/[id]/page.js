@@ -64,14 +64,6 @@ const sportsAndGamesData = [
 			"Bowling is a popular recreational and competitive sport where players roll a heavy ball to knock down pins. It can be played solo or in teams, making it a fun social activity.",
 	},
 	{
-		id: 8,
-		title: "Baseball",
-		image: "/images/games/baseball.jpg",
-		description: "Hit a home run with our high-quality baseball gear.",
-		details:
-			"Baseball is a bat-and-ball game played between two teams. It is known as America's pastime and is popular worldwide. Whether you're a pitcher or a batter, we've got the gear you need.",
-	},
-	{
 		id: 9,
 		title: "Gaming Controllers",
 		image: "/images/games/gamepad.jpg",

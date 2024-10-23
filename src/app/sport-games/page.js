@@ -62,14 +62,7 @@ const sportsAndGamesData = [
 		details:
 			"Bowling is a sport in which players roll a heavy ball down a lane to knock down pins. With our top-tier bowling balls and accessories, you can perfect your roll and enjoy a fun time with family or friends.",
 	},
-	{
-		id: 8,
-		title: "Baseball",
-		image: "/images/games/baseball.jpg",
-		description: "Hit a home run with our high-quality baseball gear.",
-		details:
-			"Baseball is a bat-and-ball game played between two teams. Our range of baseball bats, gloves, and balls will have you ready to hit the field and compete like a pro.",
-	},
+	
 	{
 		id: 9,
 		title: "Gaming Controllers",
