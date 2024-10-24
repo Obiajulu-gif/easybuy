@@ -1,7 +1,7 @@
 
 # **EasyBuy Ecommerce Platform**
 
-Welcome to **EasyBuy**, an advanced e-commerce platform designed for buying and selling electronics, fashion items, and more. This project is built using **Next.js** and **Firebase** to provide a seamless shopping experience. Below you'll find all the details you need to get started, contribute, and explore the features of the platform.
+Welcome to **EasyBuy**, an advanced e-commerce platform designed for buying and selling electronics, fashion items, and more. This project is built using **Next.js** and **Firebase** to provide seamless shopping experience. Below you'll find all the details you need to get started, contribute, and explore all the features of the platform.
 
 ![EasyBuy Logo](public/images/easybuylogo.png)
 
