@@ -150,6 +150,11 @@ We welcome contributions to the project! If you’d like to contribute:
 3. Commit your changes.
 4. Open a pull request.
 
+## **Contributors**
+
+1. Ridwan Akinola
+2. Emmanuel Okoye
+
 Before making large changes, it’s a good idea to open an issue for discussion.
 
 ## **License**
