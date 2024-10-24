@@ -11,9 +11,9 @@ const products = [
 		image: "/images/electronics/motherboard.jpg",
 		price: "₦200,000",
 		description: "High-end motherboard for gaming",
-		shippingInfo: ["Ships within 3-5 days"],
+		shippingInfo: ["Ships within 3-6 days"],
 		paymentInfo: "Cash on delivery or online payment",
-		returnInfo: "Return within 7 days",
+		returnInfo: "Return within 7 days of purchase",
 	},
 	{
 		id: 2,
