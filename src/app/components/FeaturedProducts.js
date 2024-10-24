@@ -49,7 +49,7 @@ const FeaturedProducts = () => {
 					/>
 					<div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
 						<span className="text-white text-3x1 font-semibold">
-							Selling 50% off
+							Selling 40% off
 						</span>
 					</div>
 				</div>
