@@ -25,7 +25,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Sell</h3>
             <ul>
               <li><Link href="/list-product" className="hover:underline">List Product</Link></li>
-              <li><Link href="/seller-verification" className="hover:underline">Seller Verification</Link></li>
+              <li><Link href="/seller-verification" className="hover:underline">Sellers Verification</Link></li>
             </ul>
           </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3">Categories</h3>
             <ul>
               <li><Link href="/categories/fashion" className="hover:underline">Fashion and Apparel</Link></li>
-              <li><Link href="/categories/furniture" className="hover:underline">Furniture</Link></li>
+              <li><Link href="/categories/furniture" className="hover:underline">Furnitures</Link></li>
               <li><Link href="/categories/cosmetics" className="hover:underline">Cosmetics</Link></li>
               <li><Link href="/categories/healthcare" className="hover:underline">Healthcare Products</Link></li>
               <li><Link href="/categories/electronics" className="hover:underline">Electronics</Link></li>
