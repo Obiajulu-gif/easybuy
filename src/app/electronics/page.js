@@ -14,7 +14,7 @@ export default function ElectronicsPage() {
     },
     {
       id: 2,
-      title: "Roland Drumkit",
+      title: "Roland Drumkits",
       image: "/images/electronics/drumkit.jpg",
       price: "₦120,000",
     },
