@@ -65,10 +65,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3">Social Media</h3>
             <div className="flex space-x-4">
-              <Link href="https://twitter.com" className="text-gray-600 hover:text-blue-400" aria-label="Twitter"><FaTwitter size={20} /></Link>
+              <Link href="https://twitter.com/sefrel_tech" className="text-gray-600 hover:text-blue-400" aria-label="Twitter"><FaTwitter size={20} /></Link>
               <Link href="https://linkedin.com" className="text-gray-600 hover:text-blue-700" aria-label="LinkedIn"><FaLinkedin size={20} /></Link>
               <Link href="https://facebook.com" className="text-gray-600 hover:text-blue-600" aria-label="Facebook"><FaFacebook size={20} /></Link>
-              <Link href="https://instagram.com" className="text-gray-600 hover:text-pink-500" aria-label="Instagram"><FaInstagram size={20} /></Link>
+              <Link href="https://instagram.com/sefrel_tech" className="text-gray-600 hover:text-pink-500" aria-label="Instagram"><FaInstagram size={20} /></Link>
             </div>
           </div>
         </div>
